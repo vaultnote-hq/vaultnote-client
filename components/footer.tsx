@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Github } from 'lucide-react';
 import { VaultNoteLogo } from '@/components/vaultnote-logo';
 
 export function Footer() {
@@ -122,6 +123,10 @@ export function Footer() {
               </Link>
               <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
                 Privacy Policy
+              </Link>
+              <Link href="https://github.com/vaultnote-hq/vaultnote-client" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <Github className="h-4 w-4" />
+                Source Code
               </Link>
             </div>
           </div>
