@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 10
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/cleanup?auth={{CRON_SECRET}}",
+      "schedule": "0 */1 * * *"
+    }
+  ]
+}

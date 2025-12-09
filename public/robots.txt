@@ -1,0 +1,14 @@
+# Robots.txt for VaultNote
+# https://vaultnote.net/robots.txt
+
+# Allow all crawlers (including AI assistants like ChatGPT, Claude, Gemini, Perplexity, etc.)
+User-agent: *
+Allow: /
+
+# Protect private note content
+Disallow: /n/
+Disallow: /api/
+Disallow: /create
+
+# Sitemap location
+Sitemap: https://vaultnote.net/sitemap.xml
